@@ -1,0 +1,95 @@
+%% -*- mode: latex; -*-
+\RequirePackage{luatex85}
+\documentclass{article}
+
+\usepackage[
+  %% showframe,
+  paperwidth=3.5in,
+  paperheight=6.125in,
+  includehead,
+  %% text={3.5in, 6.125in},
+  left=0in,
+  headsep=0.75in,
+  %% headheight=2in,
+  top=0.6in,
+  centering,
+]{geometry}
+
+\usepackage{fourier-orns}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\chead{\Large \textsc{Pullman Car ``Dover Harbor''} \\
+  \normalsize \textsc{Safety and Comfort}  \\
+  \raisebox{-2.1pt}[10pt][10pt]{\decofourleft\decotwo\decofourright}
+}
+\cfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+\setlength\parindent{0pt}
+\setlength\tabcolsep{0pt}
+
+\newcommand\shortline[1]{
+  \begin{center}
+    \line(1,0){#1}
+  \end{center}
+}
+
+\newcommand\course[3]{
+  \begin{center}
+    \textsc{\large #1} \\
+    #2 \\
+    {\small \emph{``#3''}}
+  \end{center}
+}
+
+\begin{document}
+
+\begin{center}
+  \textsc{\Large Dinner} \\
+  \textsc{En route, April 6, 2017}
+\end{center}
+
+\shortline{64}
+
+\course{Appetizer}{Smoked Salmon Canap\'{e}s}{An Army Navy Country Club tradition}
+
+\shortline{16}
+
+\course{Entr\'{e}e}{\begin{tabular}{rl}
+  Charcoal Grilled & \\
+  & Double Lamb Chop \\
+  \end{tabular} \\
+  {\scriptsize with Hashed Brown Potatoes, Green Peas, and Sliced Tomatoes \\
+    Assorted Bread}
+}{Pullman's most requested meal}
+
+\shortline{16}
+
+\course{Dessert}{Tiramisu}{From Milford, MI to your table}
+
+\newpage
+
+\begin{center}
+  Your dinner courtesy of:
+\end{center}
+
+\begin{center}
+  Army Navy Country Club \\
+  1700 Army Navy Drive \\
+  Arlington, VA 22202
+\end{center}
+
+\begin{center}
+  \emph{Dining by Rail} \\
+  James D. Porterfield \\
+  St. Martin's Griffin, New York
+\end{center}
+
+\begin{center}
+  Fresco Pizza Caf\'{e} \\
+  145 South Milford Road \\
+  Milford, MI 48381
+\end{center}
+
+\end{document}
